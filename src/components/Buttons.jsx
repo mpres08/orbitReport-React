@@ -2,8 +2,8 @@ import "./styling.css";
 import satData from "./satData";
 
 const Buttons = ({ filterByType, setSat, displaySats }) => {
-  return (
-    <div>
+  const renderButtons = () => {
+    return (
       <div>
         {displaySats.map((sat, id) => {
           return (
@@ -13,6 +13,13 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
           );
         })}
       </div>
+    )
+  };
+
+  return (
+    <div>
+      {renderButtons()}
+      <button onClick={() => setSat(satData)}>Update Sat</button>
     </div>
   )
 };
