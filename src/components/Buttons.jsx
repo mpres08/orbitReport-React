@@ -19,7 +19,7 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
   return (
     <div>
       {renderButtons()}
-      <button onClick={() => setSat(satData)}>Update Sat</button>
+      <button onClick={() => setSat(satData)}>All Orbit</button>
     </div>
   )
 };
